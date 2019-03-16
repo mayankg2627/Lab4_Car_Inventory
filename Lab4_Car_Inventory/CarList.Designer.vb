@@ -28,6 +28,7 @@ Partial Class frmCarList
         Me.colID = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.colMake = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.colModel = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colYear = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.colPrice = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.chkNew = New System.Windows.Forms.CheckBox()
         Me.lblPrice = New System.Windows.Forms.Label()
@@ -41,7 +42,6 @@ Partial Class frmCarList
         Me.btnEnter = New System.Windows.Forms.Button()
         Me.lblYear = New System.Windows.Forms.Label()
         Me.cmbYear = New System.Windows.Forms.ComboBox()
-        Me.colYear = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.SuspendLayout()
         '
         'lblResult
@@ -87,6 +87,11 @@ Partial Class frmCarList
         '
         Me.colModel.Text = "Model"
         Me.colModel.Width = 50
+        '
+        'colYear
+        '
+        Me.colYear.Text = "Year"
+        Me.colYear.Width = 50
         '
         'colPrice
         '
@@ -215,11 +220,6 @@ Partial Class frmCarList
         Me.cmbYear.Name = "cmbYear"
         Me.cmbYear.Size = New System.Drawing.Size(160, 24)
         Me.cmbYear.TabIndex = 6
-        '
-        'colYear
-        '
-        Me.colYear.Text = "Year"
-        Me.colYear.Width = 50
         '
         'frmCarList
         '
